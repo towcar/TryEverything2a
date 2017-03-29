@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "932916681677",
+    "project_id": "poised-journey-154700"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932916681677:android:6125ef52795caa2f",
+        "android_client_info": {
+          "package_name": "com.example.carson.tryeverything"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFOlTGegX7WHkx3P21tGtJ2DMEMQnG76Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-90006406-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
