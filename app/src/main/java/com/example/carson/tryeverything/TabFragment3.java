@@ -16,7 +16,7 @@ import static com.example.carson.tryeverything.Global.arrayInt;
 /**
  * Created by Carson on 2017-02-25.
  */
-
+/*
 public class TabFragment3 extends android.support.v4.app.Fragment {
 
     public ArrayList<String> mylist3 = new ArrayList<>();
@@ -84,4 +84,4 @@ public class TabFragment3 extends android.support.v4.app.Fragment {
 
         return rootView;
     }
-}
+*/

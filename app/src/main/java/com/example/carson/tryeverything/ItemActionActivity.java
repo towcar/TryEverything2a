@@ -3,11 +3,8 @@ package com.example.carson.tryeverything;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-import com.google.android.gms.vision.Frame;
 
 
 public class ItemActionActivity extends AppCompatActivity {
@@ -33,7 +30,7 @@ public class ItemActionActivity extends AppCompatActivity {
         LinearLayout layout =(LinearLayout)findViewById(R.id.activity_item_action);
         Log.e("Test","Code Test");
         pictureID = setBackground(textName);
-        layout.setBackgroundResource(R.drawable.snowboarding);
+        layout.setBackgroundResource(R.drawable.snowboardlist);
 
 
     }

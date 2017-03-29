@@ -10,7 +10,6 @@ import android.support.v4.app.FragmentStatePagerAdapter;
  */
 
 public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
-    protected Context mContext;
 
     public SectionsPagerAdapter( FragmentManager fm) {
         super(fm);
@@ -25,10 +24,6 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
         switch (number) {
             case 0: // Fragment # 0 - This will show FirstFragment
                 return TabFragment1.newInstance();
-            case 1: // Fragment # 0 - This will show FirstFragment different title
-                return TabFragment2.newInstance();
-            case 2: // Fragment # 1 - This will show SecondFragment
-                return TabFragment3.newInstance();
             default:
                 return null;
         }
@@ -39,7 +34,7 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public int getCount() {
         // Show 3 total pages.
-        return 3;
+        return 1;
     }
 
 
@@ -47,11 +42,8 @@ public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "All";
-            case 1:
-                return "Unfinished";
-            case 2:
-                return "Completed";
+                return "Experience Everything";
+
         }
         return null;
     }

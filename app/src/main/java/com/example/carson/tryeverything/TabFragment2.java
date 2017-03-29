@@ -22,7 +22,7 @@ import static com.example.carson.tryeverything.R.id.container;
 /**
  * Created by Carson on 2017-02-25.
  */
-
+/*
 public class TabFragment2 extends android.support.v4.app.Fragment {
 
     public ArrayList<String> mylist2 = new ArrayList<>();
@@ -97,38 +97,4 @@ public class TabFragment2 extends android.support.v4.app.Fragment {
 
         return rootView1;
     }
-
-    public void onResume(){
-        super.onResume();
-
-       // adapter.notifyDataSetChanged();
-
-       // Log.e("Frag2", "Refresh Test");
-
-        // a check so it doesnt run first time
-        if (g != 0) {
-            updateData();
-        }
-        g = 1;
-
-
-    }
-
-    private void updateData(){
-        Log.e("Frag2", "Refresh Test");
-        this.mylist2.clear();
-        for (int i = 0; i < arrayInt.length; i++) {
-            if (arrayInt[i] == 1) {
-                this.mylist2.add(array[i]);
-            }
-        }
-
-
-       // rootView1 = inflater1.inflate(R.layout.fragment_main, container1, false);
-        //listView = (ListView) rootView1.findViewById(R.id.text_label);
-        adapter = new MyAdapter(getContext(), this.mylist2);
-        //listView.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
-
-    }
-}
+*/

@@ -66,7 +66,6 @@ public class TabFragment1 extends android.support.v4.app.Fragment {
                 Bundle b = new Bundle();
 
                 //get text for current item
-                //String textGet = listView.getItemAtPosition(position).toString();
                 String textGet = mylist1.get(position);
                 //put text into a bundle and add to intent
                 intent.putExtra("text", textGet);

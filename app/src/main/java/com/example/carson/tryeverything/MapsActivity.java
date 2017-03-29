@@ -101,16 +101,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Log.e("MapActivity","arrayInt = " + Global.arrayInt[position]);
 
         //Sets button colour
-        setCompleteCheck();
+        //setCompleteCheck();
 
-        Button button1 = (Button) findViewById(R.id.button);
+       /* Button button1 = (Button) findViewById(R.id.button);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //check if completed & set complete
-                setComplete();
+                //setComplete();
             }
-        });
+        });*/
 
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
@@ -120,7 +120,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void setComplete() {
-        Button buttonClick = (Button) findViewById(R.id.button);
+       /* Button buttonClick = (Button) findViewById(R.id.button);
 
         if (Global.arrayInt[position] == 1){
             //set to green
@@ -135,11 +135,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             Global.arrayInt[position] = 1;
         }
         Log.e("MapActivity","arrayInt = " + Global.arrayInt[position]);
-        Log.e("MapsActivity", "position = " + position);
+        Log.e("MapsActivity", "position = " + position);*/
     }
 
     private void setCompleteCheck() {
-        Button buttonClick = (Button) findViewById(R.id.button);
+       /* Button buttonClick = (Button) findViewById(R.id.button);
 
         if (Global.arrayInt[position] == 2){
             //set to green
@@ -150,7 +150,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             buttonClick.getBackground().setColorFilter(Color.LTGRAY, PorterDuff.Mode.SRC_IN);
         }
         Log.e("MapActivity","arrayInt = " + Global.arrayInt[position]);
-        Log.e("MapsActivity", "position = " + position);
+        Log.e("MapsActivity", "position = " + position);*/
     }
 
     @Override
@@ -371,82 +371,82 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 layout.setBackgroundResource(R.drawable.bungee);
                 break;
             case "Cave Diving":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Camping":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Cliff Jumping":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Drive In Theater":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Escape Room Challenge":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Golfing":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Helicopter Tour":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Horseback Riding":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Kayaking":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Maze Challenge":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Mountain Biking":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Paintball":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Ride A Roller Coaster":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "River Rapid Riding":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Sand Surfing":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Scuba Diving":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Shark Cave Diving":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Skydiving":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "snowboarding":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Surfing":
                 layout.setBackgroundResource(R.drawable.surfing);
                 break;
             case "Volcano Trekking":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Whale Watching":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Wine Tasting":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Yachting":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             case "Zip Lining":
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
             default:
-                layout.setBackgroundResource(R.drawable.snowboarding);
+                layout.setBackgroundResource(R.drawable.snowboardlist);
                 break;
 
         }
