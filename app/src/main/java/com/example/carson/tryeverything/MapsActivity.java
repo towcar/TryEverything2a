@@ -100,58 +100,19 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //sets to see what the value is at should be 1 while green
         Log.e("MapActivity","arrayInt = " + Global.arrayInt[position]);
 
-        //Sets button colour
-        //setCompleteCheck();
-
-       /* Button button1 = (Button) findViewById(R.id.button);
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //check if completed & set complete
-                //setComplete();
-            }
-        });*/
-
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        //pass search task data to mapArray
+        SearchTask search = new SearchTask();
+        Object[] mapArray = (Object[]) search.locate("brewery", 100.34234, 100.2342);
+
     }
 
-    private void setComplete() {
-       /* Button buttonClick = (Button) findViewById(R.id.button);
 
-        if (Global.arrayInt[position] == 1){
-            //set to green
-            buttonClick.getBackground().setColorFilter(0xFF00FF00, PorterDuff.Mode.MULTIPLY);
 
-            //set as completed
-            Global.arrayInt[position] = 2;
-        } else if (Global.arrayInt[position] == 2){
-            //set to green
-            buttonClick.getBackground().setColorFilter(Color.LTGRAY, PorterDuff.Mode.SRC_IN);
-            //set as completed
-            Global.arrayInt[position] = 1;
-        }
-        Log.e("MapActivity","arrayInt = " + Global.arrayInt[position]);
-        Log.e("MapsActivity", "position = " + position);*/
-    }
-
-    private void setCompleteCheck() {
-       /* Button buttonClick = (Button) findViewById(R.id.button);
-
-        if (Global.arrayInt[position] == 2){
-            //set to green
-            buttonClick.getBackground().setColorFilter(0xFF00FF00, PorterDuff.Mode.MULTIPLY);
-
-        } else if (Global.arrayInt[position] == 1){
-            //set to green
-            buttonClick.getBackground().setColorFilter(Color.LTGRAY, PorterDuff.Mode.SRC_IN);
-        }
-        Log.e("MapActivity","arrayInt = " + Global.arrayInt[position]);
-        Log.e("MapsActivity", "position = " + position);*/
-    }
 
     @Override
     public void onLocationChanged(Location location) {
@@ -271,12 +232,14 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         latitude = location.getLatitude();
         longitude = location.getLongitude();
 
+        //adds your own location to the map
         mMap.addMarker(new MarkerOptions()
                 .position(new LatLng(location.getLatitude(), location.getLongitude()))
                 .title("Me"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(location.getLatitude(), location.getLongitude())));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(8));
 
+        //checks for location service enabled
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest, this);
         }
@@ -453,10 +416,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         Log.e("Test","Background Set");
 
-    }
+    } //probably delete if maps activity doesnt need a background
 }
-//"Brewery Tour", "Bungee Jumping", "Cave Diving", "Camping", "Cliff Jumping", "Drive In Theater", "Escape Room Challenge", "Golfing", "Helicopter Tour", "Horseback Riding",
-//"Kayaking", "Maze Challenge", "Mountain Biking", "Paintball", "Ride A Roller Coaster", "River Rapid Riding", "Sand Surfing", "Scuba Diving", "Shark Cage Diving", "Skydiving",
-//        "Snowboarding", "Surfing", "Volcano Trekking" ,"Whale Watching", "Wine Tasting", "Yachting", "Zip Lining" };
+
 
 
